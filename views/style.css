@@ -57,6 +57,11 @@ html, body {
   padding: 1 rem;
   border-radius: 0;
 }
+.jumbotron2 {
+  background-color: lightslategray;
+  padding: 1 rem;
+  border-radius: 0;
+}
 
 .padding {
   padding-bottom: 2px;
@@ -97,7 +102,7 @@ welcome {
 
 .fun {
   width: 100%;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .gif {

@@ -20,7 +20,25 @@ app.get('/', function(req, res){
     res.render('index')
 })
 
+// display KBTK
+app.get('/kbtk', function(req, res){
+    res.render('kbtk')
+})
 
+// display SD
+app.get('/sd', function(req, res){
+    res.render('sd')
+})
+
+// display SMP
+app.get('/smp', function(req, res){
+    res.render('smp')
+})
+
+// display SMA
+app.get('/sma', function(req, res){
+    res.render('sma')
+})
 
 
 // listen to port
