@@ -1,22 +1,23 @@
 var express = require('express')
 var path = require('path')
-
-
+var errorhandler = require('errorhandler')
 
 var app = express()
 
 
 // set up template engine
 app.set('view engine', 'ejs')
+app.use('/assets', express.static('views'))
 
 // static files
-app.use(express.static(___dirname + '/assets'))
+app.use(express.static('assets'))
+// app.use(express.static(path.join(__dirname + '/assets')));
 
 // fire controller
 
 
 // display home
-app.get('/', function(req, res){
+app.get('/index', function(req, res){
     res.render('index')
 })
 
@@ -30,15 +31,11 @@ app.get('/sd', function(req, res){
     res.render('sd')
 })
 
-// display SMP
-app.get('/smp', function(req, res){
-    res.render('smp')
+// display SMP SMA
+app.get('/smp-sma', function(req, res){
+    res.render('smp-sma')
 })
 
-// display SMA
-app.get('/sma', function(req, res){
-    res.render('sma')
-})
 
 
 // listen to port

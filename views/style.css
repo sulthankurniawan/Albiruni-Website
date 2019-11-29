@@ -53,7 +53,7 @@ html, body {
 }
 
 .jumbotron {
-  background-image: url('/assets/jumbotron4.png');
+  background-image: url('/jumbotron4.png');
   padding: 1 rem;
   border-radius: 0;
 }
@@ -257,7 +257,7 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('/assets/mac.png');
+  background-image: url('/mac.png');
   position: fixed;
   display: block;
   top: 0;

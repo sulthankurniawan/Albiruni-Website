@@ -14,7 +14,9 @@
 <body>	
 
 <!-- include navbar -->
-<!-- <% include partials/nav.ejs %> -->
+<div>
+	<%- include('partials/nav', {active: "index"}); %>
+</div>
 
 <!--- Image Slider -->
 <div id="slides" class="carousel slide" data-ride="carousel">
@@ -26,23 +28,21 @@
 	</ul>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img src="/assets/test.png">
-			<div class="carousel-caption">
-				<!-- <h1 class="display-2">Bootstrap</h1>
-				<h3>Complete Website Layout</h3> -->
+			<img src="/slide3.png">
+			<!-- <div class="carousel-caption">
 				<br><br><br><br><br><br><br><br><br><br>
 				<button type="button" class="btn btn-outline-light btn-lg">View demo</button>
 				<button type="button" class="btn btn-primary btn-lg">Get started</button>
-			</div>
+			</div> -->
 		</div>
 		<div class="carousel-item">
-			<img src="/assets/custom – 8.png" alt="">
+			<img src="/slide.png" alt="">
 		</div>
 		<div class="carousel-item">
-			<img src="/assets/custom – 5.png" alt="">
+			<img src="/slide1.png" alt="">
 		</div>
 		<div class="carousel-item">
-			<img src="/assets/custom – 2.png" alt="">
+			<img src="/slide2.png" alt="">
 		</div>
 	</div>
 </div>
@@ -60,8 +60,8 @@
 			<p>> Perhatian Eksklusif dari Guru.</p>
 		</div>
 		<div col="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-			<a href="#">
-				<button type="button" class="btn btn-outline-secondary btn-lg">Kenalan Yuk!</button>
+			<a href="https://forms.gle/bXEQu8vBGo4MJZFq9">
+				<button type="button" class="btn btn-outline-secondary btn-lg">Langsung Daftar!</button>
 			</a>
 		</div>
 	</div>
@@ -118,11 +118,7 @@
 			<p>> Kerjasama Tim</p>
 			<p>> Inovasi dan Kreativitas</p>
 			<br>
-			<!-- <a href="#" class="btn btn-primary">Learn more</a> -->
 		</div>
-		<!-- <div class="col-lg-6">
-			<img src="/assets/competence.jpg" class="img-fluid" alt="">
-		</div> -->
 	</div>
 </div>
 
@@ -136,24 +132,14 @@
 			<p>Selain program akademik, tersedia program lain yang dapat diikuti anak seperti program bilingual Bahasa Inggris, program Hapalan Al Quran, pemrograman Komputer, Bussiness Day, berbagai kegiatan ekstrakulikuler seni dan olahraga, serta kelompok ilmiah remaja.</p>
 			<p>Selain itu, sekolah juga menyediakan layanan ahli bimbingan dan konseling bagi seluruh anak dan orang tua, serta layanan terapi bagi anak berkebutuhan khusus. Layanan ini terutama bertujuan untuk memfasilitasi anak agar tumbuh menjadi pribadi yang mandiri dan bertanggung jawab.</p>
 			<br>
-			<!-- <a href="#" class="btn btn-primary">Learn more</a> -->
 		</div>
 		<div class="col-lg-6">
-			<img src="/assets/competence.jpg" class="img-fluid" alt="">
+			<img src="/competence.jpg" class="img-fluid" alt="">
 		</div>
 	</div>
 </div>
 
 <hr class="my-4">
-
-<!--- Fixed background -->
-<figure>
-	<div class="fixed-wrap">
-		<div id="fixed">
-
-		</div>
-	</div>
-</figure>
 
 <!--- Two Column Section -->
 <div class="container-fluid padding">
@@ -163,9 +149,6 @@
 				<p>Pendekatan Multiple Intelligences Pembiasaan dan Teladan Untuk Mengembangkan Akhlak Mulia, Kecerdasan emosi dan sosial, serta  Kemandirian Integrasi Nilai-nilai Tauhid dan Akhlak Islami dalam Kurikulum dan Kegiatan Belajar</p>
 				<br>
 			</div>
-			<!-- <div class="col-lg-6">
-				<img src="/assets/mission-and-vision.png" class="img-fluid" alt="">
-			</div> -->
 		</div>
 		<hr class="my-4">
 	</div>
@@ -181,7 +164,7 @@
 			<br>
 		</div>
 		<div class="col-lg-6">
-			<img src="/assets/mission-and-vision.png" class="img-fluid" alt="">
+			<img src="/mission-and-vision.png" class="img-fluid" alt="">
 		</div>
 	</div>
 	<hr class="my-4">
@@ -192,10 +175,6 @@
 		<div class="col-12">
 			<h2 class="display-4">Kegiatan kami</h2>
 		</div>
-		<!-- <hr> -->
-		<!-- <div class="col-12">
-			<p class="lead">KB-TK</p>
-		</div> -->
 	</div>
 </div>
 
@@ -208,7 +187,7 @@
 				<div class="row padding">
 					<div class="col-md-3">
 						<div class="card">
-							<img class="card-img-top" src="/assets/1.png" alt="">
+							<img class="card-img-top" src="/1.png" alt="">
 							<div class="cad-body">
 								<h4 class="card-title">John Doe</h4>
 								<p class="card-text">John is an Internet enterpreneur with almost 20 years of experience</p>
@@ -218,7 +197,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img class="card-img-top" src="/assets/2.png" alt="">
+							<img class="card-img-top" src="/2.png" alt="">
 							<div class="cad-body">
 								<h4 class="card-title">Mary Jo</h4>
 								<p class="card-text">Mary Jo is a designer with almost 10 years of digital design experience</p>
@@ -228,7 +207,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img class="card-img-top" src="/assets/1.png" alt="">
+							<img class="card-img-top" src="/1.png" alt="">
 							<div class="cad-body">
 								<h4 class="card-title">Phil Ho</h4>
 								<p class="card-text">Phil is a developer with over 5 years of web development experience</p>
@@ -238,7 +217,7 @@
 					</div>
 					<div class="col-md-3">
 						<div class="card">
-							<img class="card-img-top" src="/assets/2.png" alt="">
+							<img class="card-img-top" src="/2.png" alt="">
 							<div class="cad-body">
 								<h4 class="card-title">Phil Ho</h4>
 								<p class="card-text">Phil is a developer with over 5 years of web development experience</p>
@@ -285,6 +264,11 @@
 			</a>
 		</div>
 	</div>
+</div>
+
+<!-- include footer -->
+<div>
+	<%- include('partials/footer', {active: "index"}); %>
 </div>
 	
 </body>
